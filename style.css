@@ -1,0 +1,74 @@
+:root{
+    --primary-color: #6a75ea;
+    --primary-color-light: #b3b0e7;
+    --primary-color-lighter: #f1edff;
+
+    --primary-color-dark: #464555;
+
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased; /* 글자 선명하게 */
+    -moz-osx-font-smoothing: grayscale;  /* 글자 선명하게 */
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+a:hover{
+    color: var(--primary-color)
+}
+
+header{
+    background: linear-gradient(90deg, var(--primary-color-light) 0%, var(--primary-color) 100%);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#intro span {
+    color: var(--primary-color);
+}
+
+.links{
+    display: flex;
+    padding-left: 4px;
+    gap: 0.25rem;
+    font-weight:lighter
+}
+
+.tags{
+    display: flex;
+    gap: 0.25rem;
+    font-weight:lighter
+}
+
+tag{
+    background-color: var(--primary-color-dark);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+blockquote {
+    background-color: var(--primary-color-lighter);
+    padding: 1rem;
+    border-left: 5px solid var(--primary-color);
+    margin: 1rem 0;
+}
+
+code {
+    background-color: var(--primary-color-lighter);
+    color: var(--primary-color);
+}
